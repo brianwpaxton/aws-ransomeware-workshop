@@ -1,0 +1,2285 @@
+#
+# Working TDIR Stack with resources for RDS Workshop following cfn-nag amendments. 2024-01-12.  To be deployed in US-EAST-1 ONLY!
+###
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  User01:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-arosalez  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"         
+  User02:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-amansa  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User03:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-asilva
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"         
+  User04:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-csalazar  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User05:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-dramirez  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User06:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-eowusu  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User07:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-jdoe  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User08:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-jstiles  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User09:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-jsouza  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User10:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-kmensah  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User11:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-ljuan  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User12:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-ljie  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User13:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-moliveira  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User14:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-mgarcia  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User15:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-rivera  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User16:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-mmajor  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User17:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-mjackson  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User18:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-njayashankar  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User19:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-nwolf  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User20:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-psantos  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User21:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-rroe  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User22:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-ssarkar  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User23:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-srodriguez  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User24:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-smartinez  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User25:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-wxiulan  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User26:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-wei  
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User27:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-smartinez-dev
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User28:
+    Type: AWS::IAM::User
+    Properties: 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-eowusu-dev
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"               
+  User29:
+    Type: AWS::IAM::User
+    Properties: 
+      Policies:
+        - PolicyName: WorkshopScriptPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+                - s3:CreateBucket
+                - s3:ListBucket       
+                - s3:ListAllMyBuckets                
+                - s3:DeleteObject                   
+                - s3:GetObject              
+                - s3:PutObject              
+                - s3:PutBucketLogging
+                - s3:PutBucketTagging                  
+                - iam:CreateAccessKey
+                - iam:DeleteAccessKey              
+                - iam:UpdateAccessKey                      
+                - iam:DeleteUser
+                - iam:ListAccessKeys                       
+                - iam:DetachUserPolicy              
+                - iam:GetUser
+                - iam:GetPolicy
+                - iam:ListUserPolicies                 
+              Resource:
+                - "*" 
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-rroe-dev 
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F10
+            reason: "Necessary configuration for workshop"         
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"                    
+  User30:
+    Type: AWS::IAM::User
+    Properties: 
+      Policies:
+        - PolicyName: WorkshopScriptPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+            - Effect: Allow
+              Action:
+                - s3:CreateBucket
+                - s3:ListBucket              
+                - s3:ListAllMyBuckets                
+                - s3:DeleteObject                   
+                - s3:GetObject              
+                - s3:PutObject              
+                - s3:PutBucketLogging
+                - s3:PutBucketTagging                  
+                - iam:CreateAccessKey
+                - iam:DeleteAccessKey              
+                - iam:UpdateAccessKey                      
+                - iam:DeleteUser
+                - iam:ListAccessKeys                       
+                - iam:DetachUserPolicy              
+                - iam:GetUser
+                - iam:GetPolicy
+                - iam:ListUserPolicies 
+                - ec2:DescribeSecurityGroups                
+                - ec2:AuthorizeSecurityGroupIngress
+                - ec2:DescribeInstances
+                - rds:*                
+              Resource:
+                - "*"
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-users"
+      UserName: tdir-workshop-dramirez-dev   
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F10
+            reason: "Necessary configuration for workshop"       
+          - id: F2000
+            reason: "Not assigned to group is a desired configuration for workshop"                     
+  myaccesskey:
+    Type: AWS::IAM::AccessKey
+    Properties:
+      UserName:
+        !Ref User30     
+  myaccesskey2:
+    Type: AWS::IAM::AccessKey
+    Properties:
+      UserName:
+        !Ref User19             
+
+  CodeBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-sim-buckets"  
+        - Key: "tdir-workshop-03"
+          Value: "rds-workshop-bucket"
+    UpdateReplacePolicy: Retain
+    DeletionPolicy: Retain
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W51
+            reason: "Necessary configuration for workshop"      
+          - id: W35
+            reason: "Necessary configuration for workshop"      
+          - id: W41
+            reason: "Necessary configuration for workshop"         
+  CloudIDE:
+    Type: AWS::Cloud9::EnvironmentEC2
+    Properties:
+      ConnectionType: CONNECT_SSM
+      Description: IDE for TDIR Workshop
+      ImageId: ubuntu-22.04-x86_64
+      InstanceType: t2.medium
+      Name: TDIR-IDE
+      Repositories: 
+        - RepositoryUrl: !Sub 'https://git-code.${AWS::Region}.amazonaws.com/v1/repos/TDIRRepository'
+          PathComponent: !Sub 'codecommit/TDIRRepository'
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-sim-ec2s"  
+        - Key: "tdir-workshop-02"
+          Value: "ide-ec2"          
+  LambdaExecutionRoleFileUpdate:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service:
+            - lambda.amazonaws.com
+          Action:
+          - sts:AssumeRole
+      ManagedPolicyArns:
+        - "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+        - "arn:aws:iam::aws:policy/AWSCloudTrail_FullAccess"        
+      Path: "/"
+      Policies:
+      - PolicyName: puts3
+        PolicyDocument:
+          Version: '2012-10-17'
+          Statement:
+          - Effect: Allow
+            Action: 
+            - s3:*
+            Resource: arn:aws:s3:::*   
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F3
+            reason: "Necessary configuration for workshop"                      
+  FileUpload:
+    Type: AWS::Lambda::Function
+    Properties:
+      #Handler: index.handler
+      Role: !GetAtt LambdaExecutionRoleFileUpdate.Arn
+      Handler: index.lambda_handler
+      Code:
+        ZipFile: |
+          import json
+          import boto3
+          import cfnresponse
+          import string
+          import random
+          import base64
+          from botocore.exceptions import ClientError          
+          def lambda_handler(event, context):
+            r_string = "".join(random.sample((string.ascii_lowercase) + (string.digits),16))
+            bucket_name = ("simulation-bucket-01-" + r_string)
+            bucket_arn01 = ("arn:aws:s3:::" + bucket_name + "/")
+            s3 = boto3.resource('s3')
+            s3.create_bucket(Bucket=bucket_name)
+            s3 = boto3.resource('s3')
+            bucket_tagging = s3.BucketTagging(bucket_name)
+            response = bucket_tagging.put(
+               Tagging={
+                   'TagSet': [
+                       {
+                           'Key': 'tdir-workshop-01',
+                           'Value': 'all-sim-buckets'
+                       },
+                       {
+                           'Key': 'tdir-workshop-02',
+                           'Value': 'config-bucket'
+                       },
+                    ]
+               },
+            )          
+            # Initialize the S3 client
+            s3_client = boto3.client('s3')
+            # Define the tag key and value to filter by
+            tag_key = 'tdir-workshop-03'
+            tag_value = 'rds-workshop-bucket'
+            # List all S3 buckets and filter based on the tag
+            response = s3_client.list_buckets()
+            buckets = response['Buckets']
+            buckets_with_tag = []
+            for bucket in buckets:
+                bucket_name = bucket['Name']
+                try:
+                    tags_response = s3_client.get_bucket_tagging(Bucket=bucket_name)
+                    for tag in tags_response.get('TagSet', []):
+                        if tag['Key'] == tag_key and tag['Value'] == tag_value:
+                            buckets_with_tag.append(bucket_name)
+                            break
+                except ClientError as e:
+                    if e.response['Error']['Code'] == 'NoSuchTagSet':
+                        pass
+                    else:
+                        print(f"An error occurred while processing bucket '{bucket_name}': {e}")
+            config1 = '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'
+            encoded_string = base64.b64decode(config1)
+            file_name_1 = "files.zip"
+            s3_path = file_name_1
+            s3 = boto3.resource("s3")
+            s3.Bucket(buckets_with_tag[0]).put_object(Key=s3_path, Body=encoded_string)
+            responseData = {'Message': 'Hello!'}
+            cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData, "CustomResourcePhysicalID")            
+      Runtime: python3.9   
+      Timeout: 300
+      MemorySize: 512     
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W89
+            reason: "This is used outside a VPC"      
+          - id: W89
+            reason: "Necessary configuration for workshop"                 
+          - id: W92
+            reason: "Necessary configuration for workshop"                             
+  FunctionInvoke01:
+    Type: AWS::CloudFormation::CustomResource
+    DependsOn: FileUpload
+    Version: "1.0"
+    Properties:
+      ServiceToken: !GetAtt FileUpload.Arn                  
+  BucketLogs9C0DCA97:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-sim-buckets"  
+    UpdateReplacePolicy: Retain
+    DeletionPolicy: Retain
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W35
+            reason: "Necessary configuration for workshop"      
+          - id: W41
+            reason: "Necessary configuration for workshop"      
+  BucketLogsPolicy239CFD00:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket:
+        Ref: BucketLogs9C0DCA97
+      PolicyDocument:
+        Statement:
+          - Action: s3:GetBucketAcl
+            Effect: Allow
+            Principal:
+              Service:
+                - cloudtrail.amazonaws.com
+                - delivery.logs.amazonaws.com
+            Resource:
+              Fn::GetAtt:
+                - BucketLogs9C0DCA97
+                - Arn
+            Condition:
+              StringEquals:
+                aws:SourceArn:
+                  Fn::Join:
+                    - ""
+                    - - "arn:aws:cloudtrail:"
+                      - Ref: AWS::Region
+                      - ":"
+                      - Ref: AWS::AccountId
+                      - :trail/IRWorkshopTrail                
+            Sid: AllowAWSServiceGetBucketAcl
+          - Action: s3:PutObject
+            Condition:
+              StringEquals:
+                s3:x-amz-acl: bucket-owner-full-control
+            Effect: Allow
+            Principal:
+              Service:
+                - cloudtrail.amazonaws.com
+                - delivery.logs.amazonaws.com
+            Resource:
+              Fn::Join:
+                - ""
+                - - Fn::GetAtt:
+                      - BucketLogs9C0DCA97
+                      - Arn
+                  - /*
+            Sid: AllowAWSServicePutObject
+          - Effect: Allow
+            Principal:
+              Service: cloudtrail.amazonaws.com
+            Action: s3:PutObject
+            Resource:
+              Fn::Join:
+                - ""
+                - - Fn::GetAtt:
+                      - BucketLogs9C0DCA97
+                      - Arn
+                  - /AWSLogs/
+                  - Ref: AWS::AccountId
+                  - /*
+            Condition:
+              StringEquals:
+                s3:x-amz-acl: bucket-owner-full-control
+          - Sid: ELBAccessLogs20130930
+            Effect: Allow
+            Resource:
+              Fn::Join:
+                - ''
+                - - 'arn:aws:s3:::'
+                  - Ref: BucketLogs9C0DCA97
+                  - /
+                  - Logs
+                  - /AWSLogs/
+                  - Ref: AWS::AccountId
+                  - /*
+            Principal:
+              AWS: '127311923021'
+            Action:
+              - s3:PutObject
+        Version: "2012-10-17"
+    DependsOn:
+      - BucketLogs9C0DCA97          
+  BucketAthena8BD64EF0:
+    Type: AWS::S3::Bucket
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags: 
+        - Key: "tdir-workshop-01"
+          Value: "all-sim-buckets"  
+    UpdateReplacePolicy: Retain
+    DeletionPolicy: Retain
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W51
+            reason: "Necessary configuration for workshop"      
+          - id: W35
+            reason: "Necessary configuration for workshop"      
+          - id: W41
+            reason: "Necessary configuration for workshop"       
+  Trail022F0CF2:
+    Type: AWS::CloudTrail::Trail
+    Properties:
+      IsLogging: true
+      S3BucketName:
+        Ref: BucketLogs9C0DCA97
+      EnableLogFileValidation: true
+      EventSelectors:
+        - DataResources:
+            - Type: AWS::S3::Object
+              Values:
+                - Fn::Join:
+                    - ""
+                    - - "arn:"
+                      - Ref: AWS::Partition
+                      - ":s3:::"
+      IncludeGlobalServiceEvents: true
+      TrailName: IRWorkshopTrail
+    DependsOn:
+      - BucketLogs9C0DCA97    
+      - BucketLogsPolicy239CFD00
+  VPCB9E5F0B4:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 192.168.0.0/16
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
+      InstanceTenancy: default
+      Tags:
+        - Key: Name
+          Value: WorkshopStack/VPC
+  VPCPublicSubnet1SubnetB4246D30:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 192.168.0.0/24
+      VpcId:
+        Ref: VPCB9E5F0B4
+      AvailabilityZone:
+        Fn::Select:
+          - 0
+          - Fn::GetAZs: ""
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: aws-cdk:subnet-name
+          Value: Public
+        - Key: aws-cdk:subnet-type
+          Value: Public
+        - Key: Name
+          Value: WorkshopStack/VPC/PublicSubnet1
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W33
+            reason: "These are public facing resources and should be permitted for the workshop"              
+  VPCPublicSubnet1RouteTableFEE4B781:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId:
+        Ref: VPCB9E5F0B4
+      Tags:
+        - Key: Name
+          Value: WorkshopStack/VPC/PublicSubnet1
+  VPCPublicSubnet1RouteTableAssociation0B0896DC:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId:
+        Ref: VPCPublicSubnet1RouteTableFEE4B781
+      SubnetId:
+        Ref: VPCPublicSubnet1SubnetB4246D30
+  VPCPublicSubnet1DefaultRoute91CEF279:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId:
+        Ref: VPCPublicSubnet1RouteTableFEE4B781
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId:
+        Ref: VPCIGWB7E252D3
+    DependsOn:
+      - VPCVPCGW99B986DC
+  VPCPublicSubnet1EIP6AD938E8:
+    Type: AWS::EC2::EIP
+    Properties:
+      Domain: vpc
+      Tags:
+        - Key: Name
+          Value: WorkshopStack/VPC/PublicSubnet1
+  VPCPublicSubnet1NATGatewayE0556630:
+    Type: AWS::EC2::NatGateway
+    Properties:
+      SubnetId:
+        Ref: VPCPublicSubnet1SubnetB4246D30
+      AllocationId:
+        Fn::GetAtt:
+          - VPCPublicSubnet1EIP6AD938E8
+          - AllocationId
+      Tags:
+        - Key: Name
+          Value: WorkshopStack/VPC/PublicSubnet1
+  VPCPublicSubnet2Subnet74179F39:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 192.168.1.0/24
+      VpcId:
+        Ref: VPCB9E5F0B4
+      AvailabilityZone:
+        Fn::Select:
+          - 1
+          - Fn::GetAZs: ""
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: aws-cdk:subnet-name
+          Value: Public
+        - Key: aws-cdk:subnet-type
+          Value: Public
+        - Key: Name
+          Value: WorkshopStack/VPC/PublicSubnet2
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W33
+            reason: "These are public facing resources and should be permitted for the workshop"                
+  VPCPublicSubnet2RouteTable6F1A15F1:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId:
+        Ref: VPCB9E5F0B4
+      Tags:
+        - Key: Name
+          Value: WorkshopStack/VPC/PublicSubnet2
+  VPCPublicSubnet2RouteTableAssociation5A808732:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId:
+        Ref: VPCPublicSubnet2RouteTable6F1A15F1
+      SubnetId:
+        Ref: VPCPublicSubnet2Subnet74179F39
+  VPCPublicSubnet2DefaultRouteB7481BBA:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId:
+        Ref: VPCPublicSubnet2RouteTable6F1A15F1
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId:
+        Ref: VPCIGWB7E252D3
+    DependsOn:
+      - VPCVPCGW99B986DC
+  VPCPrivateSubnet1Subnet8BCA10E0:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 192.168.2.0/24
+      VpcId:
+        Ref: VPCB9E5F0B4
+      AvailabilityZone:
+        Fn::Select:
+          - 0
+          - Fn::GetAZs: ""
+      MapPublicIpOnLaunch: false
+      Tags:
+        - Key: aws-cdk:subnet-name
+          Value: Private
+        - Key: aws-cdk:subnet-type
+          Value: Private
+        - Key: Name
+          Value: WorkshopStack/VPC/PrivateSubnet1
+  VPCPrivateSubnet1RouteTableBE8A6027:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId:
+        Ref: VPCB9E5F0B4
+      Tags:
+        - Key: Name
+          Value: WorkshopStack/VPC/PrivateSubnet1
+  VPCPrivateSubnet1RouteTableAssociation347902D1:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId:
+        Ref: VPCPrivateSubnet1RouteTableBE8A6027
+      SubnetId:
+        Ref: VPCPrivateSubnet1Subnet8BCA10E0
+  VPCPrivateSubnet1DefaultRouteAE1D6490:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId:
+        Ref: VPCPrivateSubnet1RouteTableBE8A6027
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId:
+        Ref: VPCPublicSubnet1NATGatewayE0556630
+  VPCPrivateSubnet2SubnetCFCDAA7A:
+    Type: AWS::EC2::Subnet
+    Properties:
+      CidrBlock: 192.168.3.0/24
+      VpcId:
+        Ref: VPCB9E5F0B4
+      AvailabilityZone:
+        Fn::Select:
+          - 1
+          - Fn::GetAZs: ""
+      MapPublicIpOnLaunch: false
+      Tags:
+        - Key: aws-cdk:subnet-name
+          Value: Private
+        - Key: aws-cdk:subnet-type
+          Value: Private
+        - Key: Name
+          Value: WorkshopStack/VPC/PrivateSubnet2
+  VPCPrivateSubnet2RouteTable0A19E10E:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId:
+        Ref: VPCB9E5F0B4
+      Tags:
+        - Key: Name
+          Value: WorkshopStack/VPC/PrivateSubnet2
+  VPCPrivateSubnet2RouteTableAssociation0C73D413:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId:
+        Ref: VPCPrivateSubnet2RouteTable0A19E10E
+      SubnetId:
+        Ref: VPCPrivateSubnet2SubnetCFCDAA7A
+  VPCPrivateSubnet2DefaultRouteF4F5CFD2:
+    Type: AWS::EC2::Route
+    Properties:
+      RouteTableId:
+        Ref: VPCPrivateSubnet2RouteTable0A19E10E
+      DestinationCidrBlock: 0.0.0.0/0
+      NatGatewayId:
+        Ref: VPCPublicSubnet1NATGatewayE0556630
+  VPCIGWB7E252D3:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: WorkshopStack/VPC
+  VPCVPCGW99B986DC:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId:
+        Ref: VPCB9E5F0B4
+      InternetGatewayId:
+        Ref: VPCIGWB7E252D3
+
+  WebServerSecurityGroup: 
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow access from internet
+      GroupName: TDIR Workshop EC2 Security Group
+      VpcId: !Ref VPCB9E5F0B4
+      SecurityGroupEgress: 
+      - IpProtocol: tcp
+        FromPort: 0
+        ToPort: 65535
+        CidrIp: 0.0.0.0/0      
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W28
+            reason: "Updates using tags"      
+          - id: W5
+            reason: "Necessary configuration for workshop"     
+          - id: W29
+            reason: "Necessary configuration for workshop"   
+          - id: W36
+            reason: "Necessary configuration for workshop"             
+  DBEC2SecurityGroup: 
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Open Database for Access
+      GroupName: TDIR Workshop DBEC2 Security Group
+      VpcId: !Ref VPCB9E5F0B4      
+      SecurityGroupIngress: 
+      - IpProtocol: tcp
+        FromPort: 3306
+        ToPort: 3306
+        SourceSecurityGroupId:
+          Ref: WebServerSecurityGroup       
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: W28
+            reason: "Updates using tags"    
+          - id: F1000
+            reason: "Necessary configuration for workshop"                             
+          - id: W36
+            reason: "Necessary configuration for workshop"              
+  TDIRDBSubnetGroup:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupDescription: DB Subnet Group for TDIR Workshop
+      DBSubnetGroupName: TDIR DB Subnet Group
+      SubnetIds: 
+        - !Ref VPCPublicSubnet1SubnetB4246D30
+        - !Ref VPCPublicSubnet2Subnet74179F39        
+  KMSKey:
+    Type: 'AWS::KMS::Key'
+    Properties:
+      Description: "KMS Key"
+      EnableKeyRotation: true
+      KeyPolicy:
+        Id: !Ref AWS::StackName
+        Statement:
+          - Action:
+              - "kms:*"
+            Effect: "Allow"
+            Principal:
+              AWS: !Sub arn:${AWS::Partition}:iam::${AWS::AccountId}:root
+            Resource: "*"
+            Sid: "Allow administration of the key"
+        Version: "2012-10-17"
+  DBDEV:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      DBName: TDIRDEV
+      AllocatedStorage: '5'
+      DBInstanceClass: 'db.m5.large'
+      Engine: MySQL
+      MasterUsername: admin
+      ManageMasterUserPassword: true
+      MasterUserSecret:
+        KmsKeyId: !Ref KMSKey
+      PubliclyAccessible: true      
+      VPCSecurityGroups:
+      - !GetAtt DBEC2SecurityGroup.GroupId
+      DBSubnetGroupName:
+        Ref: TDIRDBSubnetGroup      
+    DeletionPolicy: Snapshot  
+    DependsOn:
+      - Trail022F0CF2
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F23
+            reason: "Required as part of workshop"   
+          - id: F24        
+            reason: "Required as part of workshop"         
+          - id: F27        
+            reason: "Required as part of workshop"   
+          - id: F80        
+            reason: "Required as part of workshop"                                       
+          - id: F22        
+            reason: "Required as part of workshop"         
+  DBCluster:
+    Type: AWS::RDS::DBCluster
+    DeletionPolicy: Snapshot
+    Properties:
+      DBClusterIdentifier: "tdir-cluster-1"
+      DatabaseName: TDIRPROD      
+      Engine: aurora-mysql
+      MasterUsername: admin      
+      ManageMasterUserPassword: true
+      MasterUserSecret:
+        KmsKeyId: !Ref KMSKey
+      VpcSecurityGroupIds:
+      - !Ref DBEC2SecurityGroup
+      DBSubnetGroupName:
+        Ref: TDIRDBSubnetGroup           
+    DependsOn:
+      - Trail022F0CF2
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F34
+            reason: "Required as part of workshop"   
+          - id: F26        
+            reason: "Required as part of workshop"         
+  DBPROD:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      DBClusterIdentifier: !Ref "DBCluster"
+      DBInstanceClass: 'db.t3.medium'
+      Engine: aurora-mysql
+      PubliclyAccessible: true         
+    DependsOn:
+      - DBCluster
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F22
+            reason: "Required as part of workshop"         
+  VPCFlowLog:
+    Type: AWS::EC2::FlowLog
+    Properties:
+      ResourceId:
+        Ref: VPCB9E5F0B4
+      ResourceType: VPC
+      TrafficType: ALL
+      LogDestination:
+        Fn::GetAtt:
+          - BucketLogs9C0DCA97
+          - Arn
+      LogDestinationType: s3
+      LogFormat: ${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${packets} ${bytes} ${start} ${end} ${action} ${log-status} ${vpc-id} ${subnet-id} ${instance-id} ${tcp-flags} ${type} ${pkt-srcaddr} ${pkt-dstaddr} ${region} ${az-id} ${sublocation-type} ${sublocation-id} ${pkt-src-aws-service} ${pkt-dst-aws-service} ${flow-direction} ${traffic-path}
+      MaxAggregationInterval: 60
+    DependsOn:
+      - BucketLogs9C0DCA97
+      - BucketLogsPolicy239CFD00
+      - Trail022F0CF2        
+  DNSLogs:
+    Type: AWS::Route53Resolver::ResolverQueryLoggingConfig
+    Properties:
+      DestinationArn:
+        Fn::GetAtt:
+          - BucketLogs9C0DCA97
+          - Arn
+      Name: DNS Logs for IR Workshop
+    DependsOn:
+      - BucketLogs9C0DCA97
+      - BucketLogsPolicy239CFD00
+      - Trail022F0CF2        
+  DNSLogsAssociation:
+    Type: AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation
+    Properties:
+      ResolverQueryLogConfigId:
+        Fn::GetAtt:
+          - DNSLogs
+          - Id
+      ResourceId:
+        Ref: VPCB9E5F0B4
+    DependsOn:
+      - DNSLogs
+  AthenaWorkGroup:
+    Type: AWS::Athena::WorkGroup
+    Properties:
+      Name: IRWorkshopAthenaWorkGroup
+      RecursiveDeleteOption: true
+      State: ENABLED
+      WorkGroupConfiguration:
+        EnforceWorkGroupConfiguration: true
+        PublishCloudWatchMetricsEnabled: false
+        RequesterPaysEnabled: false
+        ResultConfiguration:
+          EncryptionConfiguration:
+            EncryptionOption: SSE_S3
+          OutputLocation:
+            Fn::Join:
+              - ""
+              - - s3://
+                - Ref: BucketAthena8BD64EF0
+                - /
+  IRWorkshopGlueDatabase:
+    Type: AWS::Glue::Database
+    Properties:
+      CatalogId:
+        Ref: AWS::AccountId
+      DatabaseInput:
+        Name: irworkshopgluedatabase
+  IRWorkshopGlueTableCloudTrail:
+    Type: AWS::Glue::Table
+    Properties:
+      CatalogId:
+        Ref: AWS::AccountId
+      DatabaseName: irworkshopgluedatabase
+      TableInput:
+        Name: irworkshopgluetablecloudtrail
+        Parameters:
+          classification: json
+          EXTERNAL: "true"
+          projection.enabled: "true"
+          projection.date_partition.type: date
+          projection.date_partition.range:
+            Fn::Join:
+              - ""
+              - - "NOW-1DAY"
+                - ", NOW"
+          projection.date_partition.format: yyyy/MM/dd
+          projection.date_partition.interval: "1"
+          projection.date_partition.interval.unit: DAYS
+          projection.region_partition.type: enum
+          projection.region_partition.values: us-east-2,us-east-1,us-west-1,us-west-2,af-south-1,ap-east-1,ap-south-1,ap-northeast-3,ap-northeast-2,ap-southeast-1,ap-southeast-2,ap-northeast-1,ca-central-1,cn-north-1,cn-northwest-1,eu-central-1,eu-west-1,eu-west-2,eu-south-1,eu-west-3,eu-north-1,me-south-1,sa-east-1
+          projection.account_partition.type: enum
+          projection.account_partition.values:
+            Ref: AWS::AccountId
+          storage.location.template:
+            Fn::Join:
+              - ""
+              - - s3://
+                - Ref: BucketLogs9C0DCA97
+                - /AWSLogs/${account_partition}/CloudTrail/${region_partition}/${date_partition}
+        PartitionKeys:
+          - Name: date_partition
+            Type: string
+          - Name: region_partition
+            Type: string
+          - Name: account_partition
+            Type: string
+        StorageDescriptor:
+          Columns:
+            - Name: eventversion
+              Type: string
+            - Name: useridentity
+              Type: struct<type:string,principalid:string,arn:string,accountid:string,invokedby:string,accesskeyid:string,userName:string,sessioncontext:struct<attributes:struct<mfaauthenticated:string,creationdate:string>,sessionissuer:struct<type:string,principalId:string,arn:string,accountId:string,userName:string>>>
+            - Name: eventtime
+              Type: string
+            - Name: eventsource
+              Type: string
+            - Name: eventname
+              Type: string
+            - Name: awsregion
+              Type: string
+            - Name: sourceipaddress
+              Type: string
+            - Name: useragent
+              Type: string
+            - Name: errorcode
+              Type: string
+            - Name: errormessage
+              Type: string
+            - Name: requestparameters
+              Type: string
+            - Name: responseelements
+              Type: string
+            - Name: additionaleventdata
+              Type: string
+            - Name: eventid
+              Type: string
+            - Name: resources
+              Type: array<struct<ARN:string,accountId:string,type:string>>
+            - Name: eventtype
+              Type: string
+            - Name: apiversion
+              Type: string
+            - Name: readonly
+              Type: string
+            - Name: recipientaccountid
+              Type: string
+            - Name: serviceeventdetails
+              Type: string
+            - Name: sharedeventid
+              Type: string
+            - Name: vpcendpointid
+              Type: string
+          InputFormat: com.amazon.emr.cloudtrail.CloudTrailInputFormat
+          Location:
+            Fn::Join:
+              - ""
+              - - s3://
+                - Ref: BucketLogs9C0DCA97
+                - /AWSLogs/
+          OutputFormat: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+          SerdeInfo:
+            Parameters:
+              serialization.format: "1"
+            SerializationLibrary: com.amazon.emr.hive.serde.CloudTrailSerde
+        TableType: EXTERNAL_TABLE
+  IRWorkshopGlueTableVPCFlow:
+    Type: AWS::Glue::Table
+    Properties:
+      CatalogId:
+        Ref: AWS::AccountId
+      DatabaseName: irworkshopgluedatabase
+      TableInput:
+        Name: irworkshopgluetablevpcflow
+        Parameters:
+          classification: csv
+          EXTERNAL: "true"
+          projection.enabled: "true"
+          projection.date_partition.type: date
+          projection.date_partition.range:
+            Fn::Join:
+              - ""
+              - - "NOW-1DAY"
+                - ", NOW"
+          projection.date_partition.format: yyyy/MM/dd
+          projection.date_partition.interval: "1"
+          projection.date_partition.interval.unit: DAYS
+          projection.region_partition.type: enum
+          projection.region_partition.values: us-east-2,us-east-1,us-west-1,us-west-2,af-south-1,ap-east-1,ap-south-1,ap-northeast-3,ap-northeast-2,ap-southeast-1,ap-southeast-2,ap-northeast-1,ca-central-1,cn-north-1,cn-northwest-1,eu-central-1,eu-west-1,eu-west-2,eu-south-1,eu-west-3,eu-north-1,me-south-1,sa-east-1
+          projection.account_partition.type: enum
+          projection.account_partition.values:
+            Ref: AWS::AccountId
+          storage.location.template:
+            Fn::Join:
+              - ""
+              - - s3://
+                - Ref: BucketLogs9C0DCA97
+                - /AWSLogs/${account_partition}/vpcflowlogs/${region_partition}/${date_partition}
+        PartitionKeys:
+          - Name: date_partition
+            Type: string
+          - Name: region_partition
+            Type: string
+          - Name: account_partition
+            Type: string
+        StorageDescriptor:
+          Columns:
+            - Name: version
+              Type: int
+            - Name: account
+              Type: string
+            - Name: interfaceid
+              Type: string
+            - Name: sourceaddress
+              Type: string
+            - Name: destinationaddress
+              Type: string
+            - Name: sourceport
+              Type: int
+            - Name: destinationport
+              Type: int
+            - Name: protocol
+              Type: int
+            - Name: numpackets
+              Type: int
+            - Name: numbytes
+              Type: bigint
+            - Name: starttime
+              Type: int
+            - Name: endtime
+              Type: int
+            - Name: action
+              Type: string
+            - Name: logstatus
+              Type: string
+            - Name: vpcid
+              Type: string
+            - Name: subnetid
+              Type: string
+            - Name: instanceid
+              Type: string
+            - Name: tcpflags
+              Type: smallint
+            - Name: type
+              Type: string
+            - Name: pktsrcaddr
+              Type: string
+            - Name: pktdstaddr
+              Type: string
+            - Name: region
+              Type: string
+            - Name: azid
+              Type: string
+            - Name: sublocationtype
+              Type: string
+            - Name: sublocationid
+              Type: string
+            - Name: pkt_src_aws_service
+              Type: string
+            - Name: pkt_dst_aws_service
+              Type: string
+            - Name: flow_direction
+              Type: string
+            - Name: traffic_path
+              Type: string
+          InputFormat: org.apache.hadoop.mapred.TextInputFormat
+          Location:
+            Fn::Join:
+              - ""
+              - - s3://
+                - Ref: BucketLogs9C0DCA97
+                - /AWSLogs/
+          OutputFormat: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+          SerdeInfo:
+            Parameters:
+              serialization.format: ""
+              field.delim: " "
+            SerializationLibrary: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+        TableType: EXTERNAL_TABLE
+  IRWorkshopGlueTableDNS:
+    Type: AWS::Glue::Table
+    Properties:
+      CatalogId:
+        Ref: AWS::AccountId
+      DatabaseName: irworkshopgluedatabase
+      TableInput:
+        Name: irworkshopgluetabledns
+        Parameters:
+          classification: csv
+          EXTERNAL: "true"
+          projection.enabled: "true"
+          projection.date_partition.type: date
+          projection.date_partition.range:
+            Fn::Join:
+              - ""
+              - - "NOW-1DAY"
+                - ", NOW"
+          projection.date_partition.format: yyyy/MM/dd
+          projection.date_partition.interval: "1"
+          projection.date_partition.interval.unit: DAYS
+          projection.vpc_partition.type: enum
+          projection.vpc_partition.values:
+            Ref: VPCB9E5F0B4
+          projection.account_partition.type: enum
+          projection.account_partition.values:
+            Ref: AWS::AccountId
+          storage.location.template:
+            Fn::Join:
+              - ""
+              - - s3://
+                - Ref: BucketLogs9C0DCA97
+                - /AWSLogs/${account_partition}/vpcdnsquerylogs/${vpc_partition}/${date_partition}
+        PartitionKeys:
+          - Name: date_partition
+            Type: string
+          - Name: vpc_partition
+            Type: string
+          - Name: account_partition
+            Type: string
+        StorageDescriptor:
+          Columns:
+            - Name: version
+              Type: float
+            - Name: account_id
+              Type: string
+            - Name: region
+              Type: string
+            - Name: vpc_id
+              Type: string
+            - Name: query_timestamp
+              Type: string
+            - Name: query_name
+              Type: string
+            - Name: query_type
+              Type: string
+            - Name: query_class
+              Type: string
+            - Name: rcode
+              Type: string
+            - Name: answers
+              Type: array<string>
+            - Name: srcaddr
+              Type: string
+            - Name: srcport
+              Type: int
+            - Name: transport
+              Type: string
+            - Name: srcids
+              Type: string
+          InputFormat: org.apache.hadoop.mapred.TextInputFormat
+          Location:
+            Fn::Join:
+              - ""
+              - - s3://
+                - Ref: BucketLogs9C0DCA97
+                - /AWSLogs/
+          OutputFormat: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+          SerdeInfo:
+            Parameters:
+              serialization.format: ""
+            SerializationLibrary: org.openx.data.jsonserde.JsonSerDe
+        TableType: EXTERNAL_TABLE
+
+
+  AthenaAdminRolePolicy978E0929:
+    Type: AWS::IAM::ManagedPolicy
+    Properties:
+      PolicyDocument:
+        Statement:
+          - Action:
+              - athena:BatchGetNamedQuery
+              - athena:CreateNamedQuery
+              - athena:DeleteNamedQuery
+              - athena:GetCatalogImportStatus
+              - athena:GetNamedQuery
+              - athena:ListNamedQueries
+            Effect: Allow
+            Resource:
+              Fn::Join:
+                - ""
+                - - "arn:aws:athena:"
+                  - Ref: AWS::Region
+                  - ":"
+                  - Ref: AWS::AccountId
+                  - :workgroup/*
+            Sid: SecurityNamedQueryFullAccess
+          - Action:
+              - athena:CreateWorkGroup
+              - athena:DeleteWorkGroup
+              - athena:GetWorkGroup
+              - athena:ListWorkGroups
+              - athena:UpdateWorkGroup
+              - athena:BatchGetQueryExecution
+              - athena:GetQueryExecution
+              - athena:GetQueryResults
+              - athena:GetQueryResultsStream
+              - athena:ListQueryExecutions
+              - athena:ListTagsForResource
+              - athena:StartQueryExecution
+              - athena:StopQueryExecution
+            Effect: Allow
+            Resource:
+              Fn::Join:
+                - ""
+                - - "arn:aws:athena:"
+                  - Ref: AWS::Region
+                  - ":"
+                  - Ref: AWS::AccountId
+                  - :workgroup/*
+            Sid: SecurityWorkgroupFullAccess
+          - Action:
+              - athena:CreateDataCatalog
+              - athena:DeleteDataCatalog
+              - athena:GetDataCatalog
+              - athena:ListDataCatalogs
+              - athena:UpdateDataCatalog
+              - athena:GetDatabase
+              - athena:ListDatabases
+              - athena:GetTableMetadata
+              - athena:ListTableMetadata
+            Effect: Allow
+            Resource:
+              Fn::Join:
+                - ""
+                - - "arn:aws:athena:"
+                  - Ref: AWS::Region
+                  - ":"
+                  - Ref: AWS::AccountId
+                  - :datacatalog/*
+            Sid: SecurityAthenaDataCatalogFullAccess
+          - Action:
+              - glue:CreateDatabase
+              - glue:DeleteDatabase
+              - glue:GetDatabase
+              - glue:GetDatabases
+              - glue:UpdateDatabase
+            Effect: Allow
+            Resource:
+              - Fn::Join:
+                  - ""
+                  - - "arn:aws:glue:"
+                    - Ref: AWS::Region
+                    - ":"
+                    - Ref: AWS::AccountId
+                    - :database/*
+              - Fn::Join:
+                  - ""
+                  - - "arn:aws:glue:"
+                    - Ref: AWS::Region
+                    - ":"
+                    - Ref: AWS::AccountId
+                    - :catalog
+            Sid: SecurityGlueDatabaseFullAccess
+          - Action:
+              - glue:BatchDeleteTable
+              - glue:CreateTable
+              - glue:DeleteTable
+              - glue:GetTables
+              - glue:GetTable
+              - glue:UpdateTable
+            Effect: Allow
+            Resource:
+              - Fn::Join:
+                  - ""
+                  - - "arn:aws:glue:"
+                    - Ref: AWS::Region
+                    - ":"
+                    - Ref: AWS::AccountId
+                    - :table/*
+              - Fn::Join:
+                  - ""
+                  - - "arn:aws:glue:"
+                    - Ref: AWS::Region
+                    - ":"
+                    - Ref: AWS::AccountId
+                    - :database/*
+              - Fn::Join:
+                  - ""
+                  - - "arn:aws:glue:"
+                    - Ref: AWS::Region
+                    - ":"
+                    - Ref: AWS::AccountId
+                    - :catalog
+            Sid: SecurityGlueTableFullAccess
+          - Action:
+              - glue:BatchCreatePartition
+              - glue:BatchDeletePartition
+              - glue:BatchGetPartition
+              - glue:CreatePartition
+              - glue:DeletePartition
+              - glue:GetPartitions
+              - glue:UpdatePartition
+            Effect: Allow
+            Resource:
+              Fn::Join:
+                - ""
+                - - "arn:aws:glue:"
+                  - Ref: AWS::Region
+                  - ":"
+                  - Ref: AWS::AccountId
+                  - :database/*
+            Sid: SecurityGluePartitionReadWrite
+          - Action:
+              - s3:AbortMultipartUpload
+              - s3:GetBucketLocation
+              - s3:GetObject
+              - s3:ListBucket
+              - s3:ListBucketMultipartUploads
+              - s3:ListMultipartUploadParts
+              - s3:PutObject
+            Effect: Allow
+            Resource:
+              - Fn::GetAtt:
+                  - BucketAthena8BD64EF0
+                  - Arn
+              - Fn::Join:
+                  - ""
+                  - - Fn::GetAtt:
+                        - BucketAthena8BD64EF0
+                        - Arn
+                    - /*
+            Sid: AthenaOutputBucketReadWrite
+          - Action:
+              - s3:GetObject
+              - s3:ListBucket
+            Effect: Allow
+            Resource:
+              - Fn::GetAtt:
+                  - BucketLogs9C0DCA97
+                  - Arn
+              - Fn::Join:
+                  - ""
+                  - - Fn::GetAtt:
+                        - BucketLogs9C0DCA97
+                        - Arn
+                    - /*
+            Sid: LogSourceBucketReadOnly
+          - Action:
+              - s3:GetBucketLocation
+              - s3:ListBucket
+              - s3:ListAllMyBuckets
+            Effect: Allow
+            Resource:
+              - Fn::GetAtt:
+                  - BucketLogs9C0DCA97
+                  - Arn
+              - Fn::GetAtt:
+                  - BucketAthena8BD64EF0
+                  - Arn
+            Sid: ListLogAndOutputBuckets
+          - Action: cloudshell:*
+            Effect: Allow
+            Resource: "*"
+            Sid: CloudShellPermissions
+        Version: "2012-10-17"
+      Description: ""
+      Path: /
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:
+          - id: F5
+            reason: "Required as part of workshop"     
+          - id: W13
+            reason: "Required as part of workshop"             
+          - id: W28
+            reason: "Required as part of workshop"                   
+  AthenaAdminRoleB2929A4F:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: sts:AssumeRole
+            Condition:
+              StringEquals:
+                aws:PrincipalArn:
+                  - Fn::Join:
+                      - ""
+                      - - "arn:aws:iam::"
+                        - Ref: AWS::AccountId
+                        - ":"
+                        - "role/IRWorkshopRole"
+            Effect: Allow
+            Principal:
+              AWS:
+                Fn::Join:
+                  - ""
+                  - - "arn:"
+                    - Ref: AWS::Partition
+                    - ":iam::"
+                    - Ref: AWS::AccountId
+                    - :root
+        Version: "2012-10-17"
+      ManagedPolicyArns:
+        - Ref: AthenaAdminRolePolicy978E0929
+      RoleName: SecurityAdminRole
+    Metadata:
+      cfn_nag:
+        rules_to_suppress:       
+          - id: W28
+            reason: "Required as part of workshop"     
+  CloudTrailQueries:
+    Type: AWS::Athena::NamedQuery
+    Properties:
+      Database: irworkshopgluedatabase
+      QueryString: |-
+        /*
+        Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+        SPDX-License-Identifier: MIT-0
+        */
+
+        -- PREVIEW TABLE
+        -- preview first 10 rows with all fields, quick way to verify everything is setup correctly
+
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        LIMIT 10;
+
+        -- PARTITION TESTS 
+        /*   NOTE: if there are no constraints a partition (account, region, or date) then by default ALL data will be scanned
+                   this could lead to costly query, always consider using at least one partition constraint.
+
+                   Note that this is the case even if you have other constraints in a query (e.g. sourceipaddress = '192.0.2.1'),
+                   only constraints using partition fields (date_partition, region_partition, account_partition)
+                   will limit the amount of data scanned.
+        */        
+
+        -- preview first 10 rows with all fields, limited to a single account
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE account_partition = '111122223333'
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to multiple accounts
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE account_partition in ('111122223333','444455556666','123456789012')
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to a single region
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE region_partition = 'us-east-1'
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to multiple regions
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE region_partition in ('us-east-1','us-east-2','us-west-2')
+        LIMIT 10;
+
+        -- NOTE: date_partition format is 'YYYY/MM/DD' as a string
+        -- preview first 10 rows with all fields, limited to a certain date range
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE date_partition >= '2021/07/01'
+        AND date_partition <= '2021/07/31'
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to the past 30 days (relative)
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE date_partition >= date_format(date_add('day',-30,current_timestamp), '%Y/%m/%d')
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited by a combination partition constraints
+        -- NOTE: narrowing the scope of the query as much as possible will improve performance and minimize cost
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE date_partition >= '2021/07/01'
+        AND date_partition <= '2021/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        LIMIT 10;
+
+        -- ANALYSIS EXAMPLES
+        -- NOTE: default partition constraints have been provided for each query, 
+        --       be sure to add the appropriate partition constraints to the WHERE clause as shown above
+        /*  
+            DEFAULT partition constraints: 
+                WHERE date_partition >= '2021/07/01'
+                AND date_partition <= '2021/07/31'
+                AND account_partition = '111122223333'
+                AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+
+            Be sure to modify or remove these to fit the scope of your intended analysis
+        */
+
+        -- Summary of event counts by Region (e.g. where is the most activity)
+        SELECT region_partition, count(*) as eventcount FROM "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE date_partition >= '2021/07/01'
+        AND date_partition <= '2021/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY region_partition
+        ORDER BY eventcount DESC
+
+        -- Summary of event count by Region and EventName, ordered by event count (decending) for each region
+        --   Quick way to identify top EventNames seen in each region
+        SELECT region_partition, eventname, count(*) as eventcount FROM "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE date_partition >= '2021/07/01'
+        AND date_partition <= '2021/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY region_partition, eventname
+        ORDER BY region_partition, eventcount DESC
+
+        -- User login summary, via AssumeRole or ConsoleLogin
+        --   includes a list of all source IPs for each user
+        SELECT  useridentity.arn, eventname, array_agg(DISTINCT(sourceipaddress) ORDER BY sourceipaddress) AS sourceips FROM "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE useridentity.arn IS NOT NULL
+        AND (eventname = 'AssumeRole' OR eventname = 'ConsoleLogin')
+        AND date_partition >= '2021/07/01'
+        AND date_partition <= '2021/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY useridentity.arn, eventname
+        ORDER BY eventname
+
+        -- User Activity Summary
+        -- filter high volume read-only GET/LIST/DECRIBE calls
+        SELECT useridentity.arn, array_agg(DISTINCT(eventname)) AS eventnames,
+        	array_agg(DISTINCT(sourceipaddress) ORDER BY sourceipaddress) AS sourceips,
+        	array_agg(DISTINCT(useragent) ORDER BY useragent) AS useragents FROM "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE eventname <> 'AssumeRole'
+        AND eventname NOT LIKE 'Get%'
+        AND eventname NOT LIKE 'List%'
+        AND eventname NOT LIKE 'Describe%'
+        AND date_partition >= '2021/07/01'
+        AND date_partition <= '2021/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY useridentity.arn
+
+        -- User Activity Summary, including username
+        -- filter high volume read-only GET/LIST/DECRIBE calls
+        -- same as above, but will include the ARN or the username (for IAM Users) of the principal 
+        SELECT useridentity.arn, useridentity.username,
+        	array_agg(DISTINCT(eventname) ORDER BY eventname) AS eventnames,
+        	array_agg(DISTINCT(sourceipaddress) ORDER BY sourceipaddress) AS sourceips,
+        	array_agg(DISTINCT(useragent) ORDER BY useragent) AS useragents FROM "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE eventname <> 'AssumeRole'
+        AND eventname NOT LIKE 'Get%'
+        AND eventname NOT LIKE 'List%'
+        AND eventname NOT LIKE 'Describe%'
+        AND date_partition >= '2021/07/01'
+        AND date_partition <= '2021/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY useridentity.arn, useridentity.principalid, useridentity.username
+
+        -- IAM change summary
+        -- * filter read-only GET/LIST/DESCRIBE
+        -- * filter unsuccessful calls
+        SELECT eventtime, useridentity.arn, useridentity.username, eventname, requestparameters 
+        FROM "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE eventsource = 'iam.amazonaws.com'
+        AND eventname NOT LIKE 'Get%'
+        AND eventname NOT LIKE 'List%'
+        AND eventname NOT LIKE 'Describe%'
+        AND errorcode IS NULL
+        AND date_partition >= '2021/07/01'
+        AND date_partition <= '2021/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        ORDER BY account_partition, eventtime
+
+        -- Access Key creations with extract of username and keyid
+        -- * filter unsuccessful calls
+        SELECT eventtime, useridentity.arn, useridentity.username, eventname,
+        	JSON_EXTRACT_SCALAR(JSON_EXTRACT(responseelements, '$.accessKey'), '$.userName') AS userName,
+        	JSON_EXTRACT_SCALAR(JSON_EXTRACT(responseelements, '$.accessKey'), '$.accessKeyId') AS accessKey
+        	FROM "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE eventname = 'CreateAccessKey'
+        AND errorcode IS NULL
+        AND date_partition >= '2021/07/01'
+        AND date_partition <= '2021/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        ORDER BY account_partition, eventtime
+
+        -- Password changes with extract of username
+        -- * filter unsuccessful calls
+        SELECT eventtime, useridentity.arn, useridentity.username, eventname,
+        	JSON_EXTRACT_SCALAR(requestparameters, '$.userName') AS "username with password modified"
+        	FROM "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE eventname IN ('UpdateLoginProfile', 'CreateLoginProfile')
+        AND errorcode IS NULL
+        AND date_partition >= '2021/07/01'
+        AND date_partition <= '2021/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        ORDER BY account_partition, eventtime
+
+        -- Create optimized ORC columnar format table for a single account and region for the past 90 days
+        -- NOTE: single query limit is 100 partitions, to add additional accounts, regions, or days use the following INSERT INTO method
+        -- Reference: https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into.html
+        CREATE TABLE "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"_orc
+        WITH (format = 'ORC', orc_compression = 'SNAPPY', partitioned_by = ARRAY['account_partition','region_partition','date_partition'] ) AS
+        SELECT eventversion,
+                 useridentity,
+                 eventtime,
+                 eventsource,
+                 eventname,
+                 awsregion,
+                 sourceipaddress,
+                 useragent,
+                 errorcode,
+                 errormessage,
+                 requestparameters,
+                 responseelements,
+                 additionaleventdata,
+                 requestid,
+                 eventid,
+                 resources,
+                 eventtype,
+                 apiversion,
+                 readonly,
+                 recipientaccountid,
+                 serviceeventdetails,
+                 sharedeventid,
+                 vpcendpointid,
+                 account_partition,
+                 region_partition,
+                 date_partition
+        FROM "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE account_partition = '111122223333' 
+        AND region_partition = 'us-east-1'
+        AND date_partition >= date_format(date_add('day',-90,current_timestamp), '%Y/%m/%d')
+
+        -- Add optimized ORC columnar format table for a single account and region for the past 90 days
+        -- NOTE: single query limit is 100 partitions, to add additional accounts, regions, or days keep using this INSERT INTO method
+        -- Reference: https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into.html
+        INSERT INTO "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"_orc
+        SELECT eventversion,
+                 useridentity,
+                 eventtime,
+                 eventsource,
+                 eventname,
+                 awsregion,
+                 sourceipaddress,
+                 useragent,
+                 errorcode,
+                 errormessage,
+                 requestparameters,
+                 responseelements,
+                 additionaleventdata,
+                 requestid,
+                 eventid,
+                 resources,
+                 eventtype,
+                 apiversion,
+                 readonly,
+                 recipientaccountid,
+                 serviceeventdetails,
+                 sharedeventid,
+                 vpcendpointid,
+                 account_partition,
+                 region_partition,
+                 date_partition
+        FROM "irworkshopgluedatabase"."irworkshopgluetablecloudtrail"
+        WHERE account_partition = '111122223333' 
+        AND region_partition = 'us-east-2'
+        AND date_partition >= date_format(date_add('day',-90,current_timestamp), '%Y/%m/%d')
+      Description: Example CloudTrail Athena Queries
+      Name: CloudTrailExampleQueries
+      WorkGroup: IRWorkshopAthenaWorkGroup
+    DependsOn:
+      - AthenaWorkGroup
+      - IRWorkshopGlueDatabase
+  DNSQueries:
+    Type: AWS::Athena::NamedQuery
+    Properties:
+      Database: irworkshopgluedatabase
+      QueryString: |
+        /*
+        Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+        SPDX-License-Identifier: MIT-0
+        */
+
+        -- PREVIEW TABLE
+        -- preview first 10 rows with all fields, quick way to verify everything is setup correctly
+
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetabledns"
+        LIMIT 10;
+
+        -- PARTITION TESTS 
+        /*   NOTE: if there are no constraints a partition (account, region, or date) then by default ALL data will be scanned
+                   this could lead to costly query, always consider using at least one partition constraint.
+
+                   Note that this is the case even if you have other constraints in a query (e.g. sourceaddress = '192.0.2.1'),
+                   only constraints using partition fields (date_partition, region_partition, account_partition)
+                   will limit the amount of data scanned.
+        */        
+
+        -- preview first 10 rows with all fields, limited to a single account
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE account_partition = '111122223333'
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to multiple accounts
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE account_partition in ('111122223333','444455556666','123456789012')
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to a single vpc
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE vpc_partition = 'vpc-00000001'
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to multiple vpcs
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE vpc_partition in ('vpc-00000001','vpc-00000002','vpc-00000003')
+        LIMIT 10;
+
+        -- NOTE: date_partition format is 'YYYY/MM/DD' as a string
+        -- preview first 10 rows with all fields, limited to a certain date range
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to the past 30 days (relative)
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE date_partition >= date_format(date_add('day',-30,current_timestamp), '%Y/%m/%d')
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited by a combination partition constraints
+        -- NOTE: narrowing the scope of the query as much as possible will improve performance and minimize cost
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND vpc_partition in ('vpc-00000001','vpc-00000002','vpc-00000003')
+        LIMIT 10;
+
+        -- ANALYSIS EXAMPLES
+
+        -- Sort queries by requestor instance count and query count
+        SELECT  query_name, query_type, array_distinct(filter(array_agg(srcids), q -> q.instance IS NOT NULL)) as instances, 
+                cardinality(array_distinct(filter(array_agg(srcids), q -> q.instance IS NOT NULL))) as query_count 
+        FROM "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND vpc_partition in ('vpc-00000001','vpc-00000002','vpc-00000003')
+        GROUP BY query_name, query_type
+        ORDER by query_count DESC;
+
+        -- Summary with count of each time a name name queried
+        SELECT  query_name, query_type, count(*) as query_count FROM "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND vpc_partition in ('vpc-00000001','vpc-00000002','vpc-00000003')
+        GROUP BY query_name, query_type
+        ORDER BY query_count DESC;
+
+        -- Summary with count of each time a AAAA record name name queried
+        SELECT  query_name, query_type, count(*) as query_count FROM "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE query_type <> 'AAAA'
+        AND date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND vpc_partition in ('vpc-00000001','vpc-00000002','vpc-00000003')
+        GROUP BY query_name, query_type
+        ORDER BY query_count DESC;
+
+        -- Summary with count of each time a AAAA record name name queried
+        -- split out TLD and SLD (note: doesn't properly handle TLDs containing a '.' (e.g. .com.br)
+        SELECT element_at(split(query_name,'.'),-2) AS tld, 
+                element_at(split(query_name,'.'),-3) AS sld, 
+                query_name, query_type, 
+                count(*) AS query_count
+        FROM "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE query_type <> 'AAAA'
+        AND date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND vpc_partition in ('vpc-00000001','vpc-00000002','vpc-00000003')
+        GROUP BY  query_name, query_type
+        ORDER BY  query_count DESC;
+
+        -- Get records that that resolve to a specific IP
+        SELECT * FROM "irworkshopgluedatabase"."irworkshopgluetabledns"
+        WHERE contains(transform(answers, x-> x.rdata), '203.0.113.2')
+        AND date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND vpc_partition in ('vpc-00000001','vpc-00000002','vpc-00000003');
+      Description: Example DNS Athena Queries
+      Name: DNSExampleQueries
+      WorkGroup: IRWorkshopAthenaWorkGroup
+    DependsOn:
+      - AthenaWorkGroup
+      - IRWorkshopGlueDatabase
+  vpcflowQueries:
+    Type: AWS::Athena::NamedQuery
+    Properties:
+      Database: irworkshopgluedatabase
+      QueryString: |-
+        /*
+        Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+        SPDX-License-Identifier: MIT-0
+        */
+
+        -- PREVIEW TABLE
+        -- preview first 10 rows with all fields, quick way to verify everything is setup correctly
+
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        LIMIT 10;
+
+        -- PARTITION TESTS 
+        /*   NOTE: if there are no constraints a partition (account, region, or date) then by default ALL data will be scanned
+                   this could lead to costly query, always consider using at least one partition constraint.
+
+                   Note that this is the case even if you have other constraints in a query (e.g. sourceaddress = '192.0.2.1'),
+                   only constraints using partition fields (date_partition, region_partition, account_partition)
+                   will limit the amount of data scanned.
+        */        
+
+        -- preview first 10 rows with all fields, limited to a single account
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE account_partition = '111122223333'
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to multiple accounts
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE account_partition in ('111122223333','444455556666','123456789012')
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to a single region
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE region_partition = 'us-east-1'
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to multiple regions
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE region_partition in ('us-east-1','us-east-2','us-west-2')
+        LIMIT 10;
+
+        -- NOTE: date_partition format is 'YYYY/MM/DD' as a string
+        -- preview first 10 rows with all fields, limited to a certain date range
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited to the past 30 days (relative)
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE date_partition >= date_format(date_add('day',-30,current_timestamp), '%Y/%m/%d')
+        LIMIT 10;
+
+        -- preview first 10 rows with all fields, limited by a combination partition constraints
+        -- NOTE: narrowing the scope of the query as much as possible will improve performance and minimize cost
+        SELECT * from "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        LIMIT 10;
+
+        -- ANALYSIS EXAMPLES
+        -- NOTE: default partition constraints have been provided for each query, 
+        --       be sure to add the appropriate partition constraints to the WHERE clause as shown above
+        /*  
+            DEFAULT partition constraints: 
+                WHERE date_partition >= '2020/07/01'
+                AND date_partition <= '2020/07/31'
+                AND account_partition = '111122223333'
+                AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+
+            Be sure to modify or remove these to fit the scope of your intended analysis
+        */
+
+        -- Get list source/destination IP pairs ordered by the number of records 
+        SELECT region, instanceid, sourceaddress, destinationaddress, count(*) as record_count FROM "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY region, instanceid, sourceaddress, destinationaddress
+        ORDER BY record_count DESC
+
+        -- Get a summary of records between a given source/destination IP pair, ordered by the total number of bytes
+        SELECT region, instanceid, sourceaddress, destinationaddress, sum(numbytes) as byte_count FROM "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE (sourceaddress = '192.0.2.1' OR destinationaddress = '192.0.2.1')
+        AND (sourceaddress = '203.0.113.2' OR destinationaddress = '203.0.113.2')
+        AND date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY region, instanceid, sourceaddress, destinationaddress
+        ORDER BY byte_count DESC
+
+        -- Get a summary of the number of bytes sent from port 443 limited to a single instance
+        -- NOTE: for remote IPs this represents the amount data downloaded from port 443 by the instance,
+        --       for instance IPs this represents the amount data downloaded by remost hosts from the instance on port 443
+        SELECT region, instanceid, sourceaddress, sourceport, destinationaddress, sum(numbytes) as byte_count FROM "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE instanceid = 'i-000000000000000'
+        AND sourceport = 443
+        AND date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY region, instanceid, sourceaddress, sourceport, destinationaddress
+        ORDER BY byte_count DESC
+
+        -- Get a summary of the number of bytes sent to port 443 limited to a single instance
+        -- NOTE: for remote IPs this represents the amount data uploaded to port 443 by the instance,
+        --       for instance IPs this represents the amount data uploaded by remost hosts to the instance on port 443
+        SELECT region, instanceid, sourceaddress, destinationaddress, destinationport, sum(numbytes) as byte_count FROM "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE instanceid = 'i-000000000000000'
+        AND destinationport = 443
+        AND date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY region, instanceid, sourceaddress, destinationaddress, destinationport
+        ORDER BY byte_count DESC
+
+        -- Get a summary with the number of bytes for each src_ip,src_port,dst_ip,dst_port quad across all records to or from a specific IP
+        SELECT sourceaddress, destinationaddress, sourceport, destinationport, sum(numbytes) as byte_count FROM "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE (sourceaddress = '192.0.2.1' OR destinationaddress = '192.0.2.1')
+        AND date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY sourceaddress, destinationaddress, sourceport, destinationport
+        ORDER BY byte_count DESC
+
+        -- Get all flow records between two IPs showing flow_direction (requires v5 flow-direction field to be enabled)
+        SELECT from_unixtime(starttime) AS start_time,
+        from_unixtime(endtime) AS end_time,
+        interfaceid,
+        sourceaddress,
+        destinationaddress,
+        sourceport,
+        destinationport,
+        numpackets,
+        numbytes,
+        flow_direction,
+        action
+        FROM "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE (sourceaddress = '192.0.2.1'
+        AND destinationaddress = '192.0.2.254')
+        OR (sourceaddress = '192.0.2.254'
+        AND destinationaddress = '192.0.2.1')
+        ORDER BY starttime ASC
+
+        -- List when source ips were first seen / last seen with a summary of destination ip/instances/ports
+        SELECT sourceaddress,
+                 min(starttime) AS first_seen,
+                 max(endtime) AS last_seen,
+                 array_agg(DISTINCT(destinationaddress)),
+                 array_agg(DISTINCT(instanceid)),
+                 array_agg(DISTINCT(destinationport))
+        FROM "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE destinationport < 32768 -- skip ephemeral ports, since we're looking for inbound connections to service ports
+        AND date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY sourceaddress
+        ORDER by first_seen ASC
+
+
+        -- Daily Transfer Report on Top 10 Internal IPs with large transfers, limited to source addresses in network 192.0.2.0/24
+        SELECT "irworkshopgluedatabase"."irworkshopgluetablevpcflow".event_date, "irworkshopgluedatabase"."irworkshopgluetablevpcflow".sourceaddress, "irworkshopgluedatabase"."irworkshopgluetablevpcflow".destinationaddress, sum("irworkshopgluedatabase"."irworkshopgluetablevpcflow".numbytes) as byte_count
+        FROM "irworkshopgluedatabase"."irworkshopgluetablevpcflow" 
+        INNER JOIN (SELECT sourceaddress, sum(numbytes) as byte_count FROM "irworkshopgluedatabase"."irworkshopgluetablevpcflow"
+        WHERE sourceaddress like '192.0.2.%'
+        AND date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY region, instanceid, sourceaddress, destinationaddress, destinationport
+        ORDER BY byte_count DESC
+        LIMIT 10) as top_n 
+        ON top_n.sourceaddress = "irworkshopgluedatabase"."irworkshopgluetablevpcflow".sourceaddress
+        WHERE date_partition >= '2020/07/01'
+        AND date_partition <= '2020/07/31'
+        AND account_partition = '111122223333'
+        AND region_partition in ('us-east-1','us-east-2','us-west-2', 'us-west-2')
+        GROUP BY "irworkshopgluedatabase"."irworkshopgluetablevpcflow".event_date, "irworkshopgluedatabase"."irworkshopgluetablevpcflow".sourceaddress, "irworkshopgluedatabase"."irworkshopgluetablevpcflow".destinationaddress
+        ORDER BY "irworkshopgluedatabase"."irworkshopgluetablevpcflow".event_date ASC, "irworkshopgluedatabase"."irworkshopgluetablevpcflow".sourceaddress ASC, "irworkshopgluedatabase"."irworkshopgluetablevpcflow".destinationaddress ASC, byte_count DESC
+      Description: Example VPC Flow Athena Queries
+      Name: VPCFlowExampleQueries
+      WorkGroup: IRWorkshopAthenaWorkGroup
+    DependsOn:
+      - AthenaWorkGroup
+      - IRWorkshopGlueDatabase
+
+Outputs:
+  AccessKeyformyaccesskey:
+    Value:
+      !Ref myaccesskey
+  SecretKeyformyaccesskey:
+    Value: !GetAtt myaccesskey.SecretAccessKey     
+  AccessKeyformyaccesskey2:
+    Value:
+      !Ref myaccesskey2
+  SecretKeyformyaccesskey2:
+    Value: !GetAtt myaccesskey2.SecretAccessKey        
